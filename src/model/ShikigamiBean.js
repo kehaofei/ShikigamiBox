@@ -18,6 +18,7 @@ export default class ShikigamiBean {
     this.level = shikigami.level;
     this.icon = shikigami.icon;
     this.initial = shikigami.initial;
+    this.clue = shikigami.clue;
   }
 
 }

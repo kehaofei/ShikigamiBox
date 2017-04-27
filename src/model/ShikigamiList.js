@@ -54,13 +54,42 @@ export default class ShikigamiList {
       }
     }
 
+    let matchInitial = "";
+    let matchShikigamiArr = [];
+
+    let clueShikigamiArr = [];
+
     for (let shikigami of this.commonList) {
-      if (shikigami.name === value) {
-        return {[shikigami.initial]: [shikigami]};
+      if (shikigami.name.charAt(0) === value.charAt(0)) {
+        if (shikigami.name === value) {
+          return {[shikigami.initial]: [shikigami]};
+        } else {
+          if (!matchInitial) {
+            matchInitial = shikigami.initial;
+          }
+          matchShikigamiArr.push(shikigami);
+        }
+      }
+
+      // 线索查询
+      if(shikigami.clue && shikigami.clue.indexOf(value) > -1) {
+        var copyShikigami = Object.assign({}, shikigami);
+        copyShikigami.clueShow = true;
+        clueShikigamiArr.push(copyShikigami);
       }
     }
 
-    return {};
+    var returnList = {};
+
+    if (matchInitial) {
+      returnList[matchInitial] = matchShikigamiArr;
+    }
+
+    if (clueShikigamiArr.length > 0) {
+      returnList['线索'] = clueShikigamiArr;
+    }
+
+    return returnList;
   }
 
   get(key) {

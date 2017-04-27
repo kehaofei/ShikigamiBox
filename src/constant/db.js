@@ -1,429 +1,551 @@
-var ShikigamiData = [{
-    "icon": require('../images/227.png'),
-    "name": "兵俑",
-    "initial": "B",
-    "level": "R"
-}, {
-    "icon": require('../images/264.png'),
-    "name": "白狼",
-    "initial": "B",
-    "level": "SR"
-}, {
-    "icon": require('../images/271.png'),
-    "name": "般若",
-    "initial": "B",
-    "level": "SR"
-}, {
-    "icon": require('../images/278.png'),
-    "name": "白童子",
-    "initial": "B",
-    "level": "SR"
-}, {
-    "icon": require('../images/265.png'),
-    "name": "茨木童子",
-    "initial": "C",
-    "level": "SSR"
-}, {
-    "icon": require('../images/246.png'),
-    "name": "赤舌",
-    "initial": "C",
-    "level": "N"
-}, {
-    "icon": require('../images/228.png'),
-    "name": "丑时之女",
-    "initial": "C",
-    "level": "R"
-}, {
-    "icon": require('../images/203.png'),
-    "name": "灯笼鬼",
-    "initial": "D",
-    "level": "N"
-}, {
-    "icon": require('../images/217.png'),
-    "name": "大天狗",
-    "initial": "D",
-    "level": "SSR"
-}, {
-    "icon": require('../images/400.png'),
-    "name": "盗墓小鬼",
-    "initial": "D",
-    "level": "N"
-}, {
-    "icon": require('../images/230.png'),
-    "name": "独眼小僧",
-    "initial": "D",
-    "level": "R"
-}, {
-    "icon": require('../images/214.png'),
-    "name": "饿鬼",
-    "initial": "E",
-    "level": "R"
-}, {
-    "icon": require('../images/263.png'),
-    "name": "二口女",
-    "initial": "E",
-    "level": "SR"
-}, {
-    "icon": require('../images/252.png'),
-    "name": "凤凰火",
-    "initial": "F",
-    "level": "SR"
-}, {
-    "icon": require('../images/268.png'),
-    "name": "惠比寿",
-    "initial": "F",
-    "level": "SR"
-}, {
-    "icon": require('../images/236.png'),
-    "name": "管狐",
-    "initial": "G",
-    "level": "R"
-}, {
-    "icon": require('../images/274.png'),
-    "name": "古笼火",
-    "initial": "G",
-    "level": "R"
-}, {
-    "icon": require('../images/223.png'),
-    "name": "骨女",
-    "initial": "G",
-    "level": "SR"
-}, {
-    "icon": require('../images/231.png'),
-    "name": "鬼女红叶",
-    "initial": "G",
-    "level": "SR"
-}, {
-    "icon": require('../images/262.png'),
-    "name": "姑获鸟",
-    "initial": "G",
-    "level": "SR"
-}, {
-    "icon": require('../images/210.png'),
-    "name": "鬼使白",
-    "initial": "G",
-    "level": "SR"
-}, {
-    "icon": require('../images/241.png'),
-    "name": "蝴蝶精",
-    "initial": "H",
-    "level": "R"
-}, {
-    "icon": require('../images/209.png'),
-    "name": "河童",
-    "initial": "H",
-    "level": "R"
-}, {
-    "icon": require('../images/277.png'),
-    "name": "黑童子",
-    "initial": "H",
-    "level": "SR"
-}, {
-    "icon": require('../images/247.png'),
-    "name": "海坊主",
-    "initial": "H",
-    "level": "SR"
-}, {
-    "icon": require('../images/279.png'),
-    "name": "花鸟卷",
-    "initial": "H",
-    "level": "SSR"
-}, {
-    "icon": require('../images/280.png'),
-    "name": "辉夜姬",
-    "initial": "H",
-    "level": "SSR"
-}, {
-    "icon": require('../images/248.png'),
-    "name": "荒川之主",
-    "initial": "H",
-    "level": "SSR"
-}, {
-    "icon": require('../images/211.png'),
-    "name": "鬼使黑",
-    "initial": "G",
-    "level": "SR"
-}, {
-    "icon": require('../images/406.png'),
-    "name": "天邪鬼黄",
-    "initial": "H",
-    "level": "N"
-}, {
-    "icon": require('../images/249.png'),
-    "name": "觉",
-    "initial": "J",
-    "level": "R"
-}, {
-    "icon": require('../images/234.png'),
-    "name": "椒图",
-    "initial": "J",
-    "level": "R"
-}, {
-    "icon": require('../images/401.png'),
-    "name": "寄生魂",
-    "initial": "J",
-    "level": "N"
-}, {
-    "icon": require('../images/219.png'),
-    "name": "酒吞童子",
-    "initial": "J",
-    "level": "SSR"
-}, {
-    "icon": require('../images/207.png'),
-    "name": "九命猫",
-    "initial": "J",
-    "level": "R"
-}, {
-    "icon": require('../images/242.png'),
-    "name": "傀儡师",
-    "initial": "K",
-    "level": "SR"
-}, {
-    "icon": require('../images/208.png'),
-    "name": "狸猫",
-    "initial": "L",
-    "level": "R"
-}, {
-    "icon": require('../images/258.png'),
-    "name": "两面佛",
-    "initial": "L",
-    "level": "SSR"
-}, {
-    "icon": require('../images/261.png'),
-    "name": "镰鼬",
-    "initial": "L",
-    "level": "SR"
-}, {
-    "icon": require('../images/404.png'),
-    "name": "天邪鬼绿",
-    "initial": "L",
-    "level": "N"
-}, {
-    "icon": require('../images/206.png'),
-    "name": "鲤鱼精",
-    "initial": "L",
-    "level": "R"
-}, {
-    "icon": require('../images/270.png'),
-    "name": "络新妇",
-    "initial": "L",
-    "level": "SR"
-}, {
-    "icon": require('../images/215.png'),
-    "name": "孟婆",
-    "initial": "M",
-    "level": "SR"
-}, {
-    "icon": require('../images/251.png'),
-    "name": "判官",
-    "initial": "P",
-    "level": "SR"
-}, {
-    "icon": require('../images/260.png'),
-    "name": "清姬",
-    "initial": "Q",
-    "level": "SR"
-}, {
-    "icon": require('../images/273.png'),
-    "name": "青坊主",
-    "initial": "Q",
-    "level": "SR"
-}, {
-    "icon": require('../images/250.png'),
-    "name": "青蛙瓷器",
-    "initial": "Q",
-    "level": "R"
-}, {
-    "icon": require('../images/266.png'),
-    "name": "青行灯",
-    "initial": "Q",
-    "level": "SSR"
-}, {
-    "icon": require('../images/256.png'),
-    "name": "妖琴师",
-    "initial": "Q",
-    "level": "SR"
-}, {
-    "icon": require('../images/220.png'),
-    "name": "犬神",
-    "initial": "Q",
-    "level": "SR"
-}, {
-    "icon": require('../images/407.png'),
-    "name": "天邪鬼青",
-    "initial": "Q",
-    "level": "N"
-}, {
-    "icon": require('../images/257.png'),
-    "name": "食梦貘",
-    "initial": "S",
-    "level": "SR"
-}, {
-    "icon": require('../images/243.png'),
-    "name": "山童",
-    "initial": "S",
-    "level": "R"
-}, {
-    "icon": require('../images/244.png'),
-    "name": "首无",
-    "initial": "S",
-    "level": "R"
-}, {
-    "icon": require('../images/237.png'),
-    "name": "山兔",
-    "initial": "S",
-    "level": "R"
-}, {
-    "icon": require('../images/221.png'),
-    "name": "食发鬼",
-    "initial": "S",
-    "level": "R"
-}, {
-    "icon": require('../images/202.png'),
-    "name": "三尾狐",
-    "initial": "S",
-    "level": "R"
-}, {
-    "icon": require('../images/226.png'),
-    "name": "跳跳妹妹",
-    "initial": "T",
-    "level": "R"
-}, {
-    "icon": require('../images/212.png'),
-    "name": "童男",
-    "initial": "T",
-    "level": "R"
-}, {
-    "icon": require('../images/213.png'),
-    "name": "童女",
-    "initial": "T",
-    "level": "R"
-}, {
-    "icon": require('../images/200.png'),
-    "name": "桃花妖",
-    "initial": "T",
-    "level": "SR"
-}, {
-    "icon": require('../images/403.png'),
-    "name": "唐纸伞妖",
-    "initial": "T",
-    "level": "N"
-}, {
-    "icon": require('../images/225.png'),
-    "name": "跳跳弟弟",
-    "initial": "T",
-    "level": "R"
-}, {
-    "icon": require('../images/232.png'),
-    "name": "铁鼠",
-    "initial": "T",
-    "level": "R"
-}, {
-    "icon": require('../images/233.png'),
-    "name": "跳跳哥哥",
-    "initial": "T",
-    "level": "SR"
-}, {
-    "icon": require('../images/245.png'),
-    "name": "提灯小僧",
-    "initial": "T",
-    "level": "N"
-}, {
-    "icon": require('../images/409.png'),
-    "name": "涂壁",
-    "initial": "T",
-    "level": "N"
-}, {
-    "icon": require('../images/405.png'),
-    "name": "天邪鬼赤",
-    "initial": "T",
-    "level": "N"
-}, {
-    "icon": require('../images/222.png'),
-    "name": "武士之灵",
-    "initial": "W",
-    "level": "R"
-}, {
-    "icon": require('../images/216.png'),
-    "name": "巫蛊师",
-    "initial": "W",
-    "level": "R"
-}, {
-    "icon": require('../images/253.png'),
-    "name": "吸血姬",
-    "initial": "X",
-    "level": "SR"
-}, {
-    "icon": require('../images/201.png'),
-    "name": "雪女",
-    "initial": "X",
-    "level": "SR"
-}, {
-    "icon": require('../images/259.png'),
-    "name": "小鹿男",
-    "initial": "X",
-    "level": "SSR"
-}, {
-    "icon": require('../images/224.png'),
-    "name": "雨女",
-    "initial": "Y",
-    "level": "R"
-}, {
-    "icon": require('../images/281.png'),
-    "name": "烟烟罗",
-    "initial": "Y",
-    "level": "SR"
-}, {
-    "icon": require('../images/254.png'),
-    "name": "妖狐",
-    "initial": "Y",
-    "level": "SR"
-}, {
-    "icon": require('../images/272.png'),
-    "name": "一目连",
-    "initial": "Y",
-    "level": "SSR"
-}, {
-    "icon": require('../images/255.png'),
-    "name": "阎魔",
-    "initial": "Y",
-    "level": "SSR"
-}, {
-    "icon": require('../images/218.png'),
-    "name": "鸦天狗",
-    "initial": "Y",
-    "level": "R"
-}, {
-    "icon": require('../images/276.png'),
-    "name": "夜叉",
-    "initial": "Y",
-    "level": "SR"
-}, {
-    "icon": require('../images/267.png'),
-    "name": "樱花妖",
-    "initial": "Y",
-    "level": "SR"
-}, {
-    "icon": require('../images/238.png'),
-    "name": "萤草",
-    "initial": "Y",
-    "level": "R"
-}, {
-    "icon": require('../images/269.png'),
-    "name": "妖刀姬",
-    "initial": "Y",
-    "level": "SSR"
-}, {
-    "icon": require('../images/408.png'),
-    "name": "帚神",
-    "initial": "Z",
-    "level": "N"
-}, {
-    "icon": require('../images/205.png'),
-    "name": "座敷童子",
-    "initial": "Z",
-    "level": "R"
-}];
+var ShikigamiData = [
+    {
+        "icon": require('../images/227.png'),
+        "name": "兵俑",
+        "initial": "B",
+        "level": "R",
+        "clue": "剑/坚甲 石化"
+    },
+    {
+        "icon": require('../images/264.png'),
+        "name": "白狼",
+        "initial": "B",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/271.png'),
+        "name": "般若",
+        "initial": "B",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/278.png'),
+        "name": "白童子",
+        "initial": "B",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/265.png'),
+        "name": "茨木童子",
+        "initial": "C",
+        "level": "SSR"
+    },
+    {
+        "icon": require('../images/246.png'),
+        "name": "赤舌",
+        "initial": "C",
+        "level": "N"
+    },
+    {
+        "icon": require('../images/228.png'),
+        "name": "丑时之女",
+        "initial": "C",
+        "level": "R",
+        "clue": "稻草人/咒锥"
+    },
+    {
+        "icon": require('../images/203.png'),
+        "name": "灯笼鬼",
+        "initial": "D",
+        "level": "N"
+    },
+    {
+        "icon": require('../images/217.png'),
+        "name": "大天狗",
+        "initial": "D",
+        "level": "SSR",
+        "clue": "风 扇 羽毛/笛子 扇"
+    },
+    {
+        "icon": require('../images/400.png'),
+        "name": "盗墓小鬼",
+        "initial": "D",
+        "level": "N"
+    },
+    {
+        "icon": require('../images/230.png'),
+        "name": "独眼小僧",
+        "initial": "D",
+        "level": "R",
+        "clue": "单眼/石菩萨 金刚经"
+    },
+    {
+        "icon": require('../images/214.png'),
+        "name": "饿鬼",
+        "initial": "E",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/263.png'),
+        "name": "二口女",
+        "initial": "E",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/252.png'),
+        "name": "凤凰火",
+        "initial": "F",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/268.png'),
+        "name": "惠比寿",
+        "initial": "F",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/236.png'),
+        "name": "管狐",
+        "initial": "G",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/274.png'),
+        "name": "古笼火",
+        "initial": "G",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/223.png'),
+        "name": "骨女",
+        "initial": "G",
+        "level": "SR",
+        "clue": "骷髅/怨念/剑"
+    },
+    {
+        "icon": require('../images/231.png'),
+        "name": "鬼女红叶",
+        "initial": "G",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/262.png'),
+        "name": "姑获鸟",
+        "initial": "G",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/210.png'),
+        "name": "鬼使白",
+        "initial": "G",
+        "level": "SR",
+        "clue": "冥界/白 夺命"
+    },
+    {
+        "icon": require('../images/241.png'),
+        "name": "蝴蝶精",
+        "initial": "H",
+        "level": "R",
+        "clue": "手鼓/小妖精 可爱"
+    },
+    {
+        "icon": require('../images/209.png'),
+        "name": "河童",
+        "initial": "H",
+        "level": "R",
+        "clue": "水球/河流/荷叶"
+    },
+    {
+        "icon": require('../images/277.png'),
+        "name": "黑童子",
+        "initial": "H",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/247.png'),
+        "name": "海坊主",
+        "initial": "H",
+        "level": "SR",
+        "clue": "渔夫/海/胡须/杖"
+    },
+    {
+        "icon": require('../images/279.png'),
+        "name": "花鸟卷",
+        "initial": "H",
+        "level": "SSR"
+    },
+    {
+        "icon": require('../images/280.png'),
+        "name": "辉夜姬",
+        "initial": "H",
+        "level": "SSR"
+    },
+    {
+        "icon": require('../images/248.png'),
+        "name": "荒川之主",
+        "initial": "H",
+        "level": "SSR"
+    },
+    {
+        "icon": require('../images/211.png'),
+        "name": "鬼使黑",
+        "initial": "G",
+        "level": "SR",
+        "clue": "黑镰/短刀"
+    },
+    {
+        "icon": require('../images/249.png'),
+        "name": "觉",
+        "initial": "J",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/234.png'),
+        "name": "椒图",
+        "initial": "J",
+        "level": "R",
+        "clue": "贝壳/扇子 尾巴"
+    },
+    {
+        "icon": require('../images/401.png'),
+        "name": "寄生魂",
+        "initial": "J",
+        "level": "N"
+    },
+    {
+        "icon": require('../images/219.png'),
+        "name": "酒吞童子",
+        "initial": "J",
+        "level": "SSR"
+    },
+    {
+        "icon": require('../images/207.png'),
+        "name": "九命猫",
+        "initial": "J",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/242.png'),
+        "name": "傀儡师",
+        "initial": "K",
+        "level": "SR",
+        "clue": "人偶/操纵"
+    },
+    {
+        "icon": require('../images/208.png'),
+        "name": "狸猫",
+        "initial": "L",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/258.png'),
+        "name": "两面佛",
+        "initial": "L",
+        "level": "SSR"
+    },
+    {
+        "icon": require('../images/261.png'),
+        "name": "镰鼬",
+        "initial": "L",
+        "level": "SR",
+        "clue": "锤子/钉耙/剑"
+    },
+    {
+        "icon": require('../images/206.png'),
+        "name": "鲤鱼精",
+        "initial": "L",
+        "level": "R",
+        "clue": "水池 水泡/尾巴"
+    },
+    {
+        "icon": require('../images/270.png'),
+        "name": "络新妇",
+        "initial": "L",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/215.png'),
+        "name": "孟婆",
+        "initial": "M",
+        "level": "SR",
+        "clue": "汤碗/琴 牙牙"
+    },
+    {
+        "icon": require('../images/251.png'),
+        "name": "判官",
+        "initial": "P",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/260.png'),
+        "name": "清姬",
+        "initial": "Q",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/273.png'),
+        "name": "青坊主",
+        "initial": "Q",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/250.png'),
+        "name": "青蛙瓷器",
+        "initial": "Q",
+        "level": "R",
+        "clue": "二筒/瓷 出千"
+    },
+    {
+        "icon": require('../images/266.png'),
+        "name": "青行灯",
+        "initial": "Q",
+        "level": "SSR"
+    },
+    {
+        "icon": require('../images/256.png'),
+        "name": "妖琴师",
+        "initial": "Q",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/220.png'),
+        "name": "犬神",
+        "initial": "Q",
+        "level": "SR",
+        "clue": "剑/雀/屋 守护 柴犬 守护"
+    },
+    {
+        "icon": require('../images/257.png'),
+        "name": "食梦貘",
+        "initial": "S",
+        "level": "SR",
+        "clue": "铃铛/噩梦"
+    },
+    {
+        "icon": require('../images/243.png'),
+        "name": "山童",
+        "initial": "S",
+        "level": "R",
+        "clue": "单眼/石锤/怪力"
+    },
+    {
+        "icon": require('../images/244.png'),
+        "name": "首无",
+        "initial": "S",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/237.png'),
+        "name": "山兔",
+        "initial": "S",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/221.png'),
+        "name": "食发鬼",
+        "initial": "S",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/202.png'),
+        "name": "三尾狐",
+        "initial": "S",
+        "level": "R",
+        "clue": "樱花树/红色 杖 妖艳/红尾"
+    },
+    {
+        "icon": require('../images/226.png'),
+        "name": "跳跳妹妹",
+        "initial": "T",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/212.png'),
+        "name": "童男",
+        "initial": "T",
+        "level": "R",
+        "clue": "翅膀/羽衣 献祭"
+    },
+    {
+        "icon": require('../images/213.png'),
+        "name": "童女",
+        "initial": "T",
+        "level": "R",
+        "clue": "翅膀/羽衣 幼女"
+    },
+    {
+        "icon": require('../images/200.png'),
+        "name": "桃花妖",
+        "initial": "T",
+        "level": "SR",
+        "clue": "花/舞"
+    },
+    {
+        "icon": require('../images/403.png'),
+        "name": "唐纸伞妖",
+        "initial": "T",
+        "level": "N"
+    },
+    {
+        "icon": require('../images/225.png'),
+        "name": "跳跳弟弟",
+        "initial": "T",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/232.png'),
+        "name": "铁鼠",
+        "initial": "T",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/233.png'),
+        "name": "跳跳哥哥",
+        "initial": "T",
+        "level": "SR",
+        "clue": "蜡烛/棺材"
+    },
+    {
+        "icon": require('../images/245.png'),
+        "name": "提灯小僧",
+        "initial": "T",
+        "level": "N"
+    },
+    {
+        "icon": require('../images/409.png'),
+        "name": "涂壁",
+        "initial": "T",
+        "level": "N",
+        "clue": "石墙"
+    },
+    {
+        "icon": require('../images/405.png'),
+        "name": "天邪鬼赤",
+        "initial": "T",
+        "level": "N",
+        "clue": "红鬼/拍屁股"
+    },
+    {
+        "icon": require('../images/406.png'),
+        "name": "天邪鬼黄",
+        "initial": "T",
+        "level": "N",
+        "clue": "鼓/单眼"
+    },
+    {
+        "icon": require('../images/404.png'),
+        "name": "天邪鬼绿",
+        "initial": "T",
+        "level": "N"
+    },
+    {
+        "icon": require('../images/407.png'),
+        "name": "天邪鬼青",
+        "initial": "T",
+        "level": "N",
+        "clue": "青皮肤/风筝"
+    },
+    {
+        "icon": require('../images/222.png'),
+        "name": "武士之灵",
+        "initial": "W",
+        "level": "R"
+    },
+    {
+        "icon": require('../images/216.png'),
+        "name": "巫蛊师",
+        "initial": "W",
+        "level": "R",
+        "clue": "蛊/虫子"
+    },
+    {
+        "icon": require('../images/253.png'),
+        "name": "吸血姬",
+        "initial": "X",
+        "level": "SR",
+        "clue": "血/蝙蝠"
+    },
+    {
+        "icon": require('../images/201.png'),
+        "name": "雪女",
+        "initial": "X",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/259.png'),
+        "name": "小鹿男",
+        "initial": "X",
+        "level": "SSR"
+    },
+    {
+        "icon": require('../images/224.png'),
+        "name": "雨女",
+        "initial": "Y",
+        "level": "R",
+        "clue": "泪珠/雨/伞"
+    },
+    {
+        "icon": require('../images/281.png'),
+        "name": "烟烟罗",
+        "initial": "Y",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/254.png'),
+        "name": "妖狐",
+        "initial": "Y",
+        "level": "SR",
+        "clue": "纸扇/书生 面具"
+    },
+    {
+        "icon": require('../images/272.png'),
+        "name": "一目连",
+        "initial": "Y",
+        "level": "SSR"
+    },
+    {
+        "icon": require('../images/255.png'),
+        "name": "阎魔",
+        "initial": "Y",
+        "level": "SSR",
+        "clue": "云/鬼面 冥界"
+    },
+    {
+        "icon": require('../images/218.png'),
+        "name": "鸦天狗",
+        "initial": "Y",
+        "level": "R",
+        "clue": "雉刀/翅膀 面具"
+    },
+    {
+        "icon": require('../images/276.png'),
+        "name": "夜叉",
+        "initial": "Y",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/267.png'),
+        "name": "樱花妖",
+        "initial": "Y",
+        "level": "SR"
+    },
+    {
+        "icon": require('../images/238.png'),
+        "name": "萤草",
+        "initial": "Y",
+        "level": "R",
+        "clue": "蒲公英/治疗 蒲公英 叮~"
+    },
+    {
+        "icon": require('../images/269.png'),
+        "name": "妖刀姬",
+        "initial": "Y",
+        "level": "SSR"
+    },
+    {
+        "icon": require('../images/408.png'),
+        "name": "帚神",
+        "initial": "Z",
+        "level": "N"
+    },
+    {
+        "icon": require('../images/205.png'),
+        "name": "座敷童子",
+        "initial": "Z",
+        "level": "R",
+        "clue": "鬼火/角 财富/幸运"
+    }
+]
 
 function chapterNameParse(name) {
   var result = name.match(/((E|H|Y)(C|D)?)([0-9]+)/i);

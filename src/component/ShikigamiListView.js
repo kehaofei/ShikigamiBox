@@ -62,6 +62,7 @@ export default class ShikigamiListView extends Component {
         <Image style={styles.shikigamiIcon} source={shikigami.icon}/>
         <Text style={styles.shikigamiName}>{shikigami.name}</Text>
         <Text style={styles["shikigamiLevel" + shikigami.level]}>{shikigami.level}</Text>
+        {shikigami.clueShow ? <Text style={styles.shikigamiClue}>{'(' + shikigami.clue + ')'}</Text> : null}
         <View style={styles.buttonWrapper}>
           <TouchableHighlight
             style={styles.fengyin}
@@ -123,6 +124,10 @@ const styles = StyleSheet.create({
   shikigamiLevelSSR: {
     marginLeft: 8,
     color: '#E3B657'
+  },
+  shikigamiClue: {
+    marginLeft: 8,
+    color: '#9B4C3E'
   },
   buttonWrapper: {
     flex: 1,

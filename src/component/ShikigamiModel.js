@@ -8,6 +8,7 @@ import {
   ScrollView,
   StyleSheet,
   Dimensions,
+  TouchableOpacity,
   TouchableHighlight,
 } from 'react-native';
 var { width, height, scale } = Dimensions.get('window');
@@ -30,6 +31,10 @@ export default class ShikigamiModel extends Component {
     }
   }
 
+  componentDidMount() {
+
+  }
+
   // 显示/隐藏 modal
   hide() {
     this.setState({
@@ -49,22 +54,24 @@ export default class ShikigamiModel extends Component {
            visible={this.state.show}
            onShow={() => {}}
            onRequestClose={() => {}} >
-           <View style={styles.modalStyle}>
-             <View style={styles.subView}>
-               <Text style={styles.contentText}>
-                 {this.props.content}
-               </Text>
-               <View style={styles.buttonView}>
-                 <TouchableHighlight underlayColor='transparent'
-                   style={styles.buttonStyle}
-                   onPress={this.hide.bind(this)}>
-                   <Text style={styles.buttonText}>
-                     确定
-                   </Text>
-                 </TouchableHighlight>
+           <TouchableOpacity style={{flex: 1}} onPress={this.hide.bind(this)}>
+             <View style={styles.modalStyle}>
+               <View style={styles.subView}>
+                 <Text style={styles.contentText}>
+                   {this.props.content}
+                 </Text>
+                 <View style={styles.buttonView}>
+                   <TouchableHighlight underlayColor='transparent'
+                     style={styles.buttonStyle}
+                     onPress={this.hide.bind(this)}>
+                     <Text style={styles.buttonText}>
+                       确定
+                     </Text>
+                   </TouchableHighlight>
+                 </View>
                </View>
              </View>
-           </View>
+           </TouchableOpacity>
         </Modal>
      );
   }

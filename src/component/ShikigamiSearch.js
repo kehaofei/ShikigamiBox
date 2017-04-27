@@ -8,14 +8,32 @@ import {
 
 export default class ShikigamiSearch extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      text: ""
+    };
+  }
+
   handleChangeText = (text) => {
-    this.props.filterShikigamiList(text);
+    setTimeout(() => {
+      this.props.filterShikigamiList(text);
+      this.setState({
+        text
+      });
+    }, 50);
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <TextInput style={styles.input} placeholder="请输入首字母或式神名" onChangeText={this.handleChangeText}/>
+        <TextInput style={styles.input}
+                   placeholder="请输入首字母或式神名"
+                   onChange={(evt) => this.setState({ text: evt.nativeEvent.text })}
+                   onChangeText={this.handleChangeText}
+                   onEndEditing={(evt) => this.setState({ text: evt.nativeEvent.text })}
+                   value={this.state.text}
+                   />
       </View>
     );
   }
